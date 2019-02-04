@@ -1,0 +1,46 @@
+<div id = "footer">
+
+			<ul class = "column">
+					<li><a href="">Link</a></li>
+					<li><a href="">Link</a></li>
+					<li><a href="">Link</a></li>
+					<li><a href="">Link</a></li>
+			</ul>
+
+			<ul class = "column">
+					<li><a href="">Link</a></li>
+					<li><a href="">Link</a></li>
+					<li><a href="">Link</a></li>
+					<li><a href="">Link</a></li>
+			</ul>
+
+			<ul class = "column">
+					<li><a href="">Link</a></li>
+					<li><a href="">Link</a></li>
+					<li><a href="">Link</a></li>
+					<li><a href="">Link</a></li>
+			</ul>
+
+			<div id = "contact">
+
+				<div id = "getintouch">
+						<h3>get in touch</h3>
+					<ul>
+						<li>Phone</li>
+						<li>Phone</li>
+						<li>Phone</li>
+						<li>Phone</li>
+					</ul>
+				</div>
+
+				<div id = "socialmedia">
+
+					<p>Social media icons go here</p>
+					
+
+				</div>
+
+				
+
+
+			</div>
