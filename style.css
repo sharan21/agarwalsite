@@ -1,5 +1,9 @@
 /* GENERAL */
 
+*{
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
 
 a{
   text-decoration: none;
@@ -17,6 +21,7 @@ html, body{
 #page{
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 
@@ -33,8 +38,9 @@ html, body{
 #main div h1{
 
 	text-align: center;
-	font-family: sans-serif;
-	color: black;
+	padding-top: 120px;
+	font-family: Verdana;
+	color: white;
 	font-size: 50emu;
 
 }
@@ -71,42 +77,38 @@ html, body{
 /* HEADER */
 #header{
 
-  position: relative;
   margin: 0 0 0 0;
   padding: 0px;
   width: 100%;
-  height: 80px;
-  border: 1px solid green;
-  background-color: #444;
+  height: 60px;
+  background-color: white;
 }
 
 #header ul {
   list-style-type: none;
-
   padding: 0px;
-  overflow: hidden;
-
 }
 
+
 #header ul a{
-  color: white;
-  font-style: sans-serif;
+
+  font-family: Verdana;
+  font-size: 14px;
 }
 
 #header img{
-  position: absolute;
 
-  width: 140px;
-  height: 60px;
+  position: absolute;
+  width: 100px;
+  height: 40px;
   margin-top: 0px;
   margin-left: 0px;
   padding: 0px;
-  border: 1px solid green;
 
 }
 #header .left {
   float: left;
-  margin-left: 50px;
+  margin-left: 35px;
   margin-top: 10px;
 
 }
@@ -116,18 +118,20 @@ html, body{
 
 li a, .dropbtn {
   display: inline-block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 #header li a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: orange;
+  color: black;
 }
 
 #header li.dropdown {
   display: inline-block;
+  color: black;
 }
 
 .dropdown-content {
@@ -147,10 +151,14 @@ li a, .dropbtn {
   text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+	background-color: #f1f1f1
+	color: black;
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
+  color: black;
 }
 
 /* FOOTER */
@@ -159,7 +167,7 @@ li a, .dropbtn {
   width: 100%;
   position: relative;
   height: auto;
-  background-color: #070617;
+  background-color: #EEE;
 }
 .footer .col {
   width: 190px;
@@ -190,7 +198,7 @@ li a, .dropbtn {
 .footer .col ul li {
   color: #999999;
   font-size: 14px;
-  font-family: inherit;
+  font-family: Verdana;
   font-weight: bold;
   padding: 5px 0px 5px 0px;
   cursor: pointer;
