@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script type="text/javascript" src="script.js"></script>
+	<style type="text/css">
+	/* FONTS */
+@font-face {
+  font-family: ManropeBold;
+  src: url("fonts/manrope/manrope-bold.otf");
+}
+
+/* GENERAL */
+*{
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+#header a{
+	font-family: ManropeBold;
+	
+
+}
+li{
+  list-style-type: none;
+}
+html, body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#page{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+
+
+
+/* MAIN */
+#main div{
+	
+	width: 100%;
+	margin-top: 0;
+	padding: 0;
+	display: inline-block;
+
+}
+#main div h1{
+
+	text-align: center;
+	padding-top: 120px;
+	font-family: Arial;
+	color: white;
+
+
+}
+#mainstory{
+
+	margin: 0;
+	background-image: url("resources/stc1.png");
+	background-size: cover;
+	opacity: 0.9;
+	height:400px;
+	width:100%;
+
+}
+#secondstory{
+	margin-top:0;
+	opacity: 0.9;
+
+	background-image: url("resources/stc2.png");
+	background-size: cover;
+
+	height:450px;
+	width:100%;
+
+}
+#thirdstory{
+	margin-top:0;
+	opacity: 0.9;
+
+	background-image: url("resources/stc3.png");
+	background-size: cover;
+	height:400px;
+	width:100%;
+
+}
+
+
+/* HEADER */
+#header{
+
+  margin: 0 0 0 0;
+  padding: 0px;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+}
+#header .image {
+	width: 50px;
+	height: 30px;
+	background-image: url("agarwal.png");
+}
+}
+
+#header ul {
+
+  padding: 0px;
+}
+
+
+#header ul li a{
+	font-family: Arial;
+
+ 
+}
+
+#header img{
+
+  position: absolute;
+  width: 160px;
+  height: 50px;
+  
+  padding: 0px;
+
+}
+#header .left {
+  float: left;
+  margin-left: 35px;
+  margin-top: 5px;
+
+}
+#header .right {
+  float: right;
+  margin-right: 35px;
+  margin-top: 5px;
+
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#header li a:hover, .dropdown:hover .dropbtn {
+  background-color: orange;
+  color: black;
+}
+
+#header li.dropdown {
+  display: inline-block;
+  color: black;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1
+	color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  color: black;
+}
+
+/* FOOTER */
+
+.footer {
+  width: 100%;
+  position: relative;
+  height: auto;
+  background-color: #EEE;
+}
+.footer .col {
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px 20px 20px 20px;
+}
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color: rgba(255,255,255,0.2);
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
+}
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer .col ul li {
+  color: #999999;
+  font-size: 14px;
+  font-family: Verdana;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+.social ul li {
+  display: inline-block;
+  padding-right: 5px !important;
+}
+
+.footer .col ul li:hover {
+  color: #ffffff;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+.clearfix {
+  clear: both;
+}
+@media only screen and (min-width: 1280px) {
+  .contain {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1139px) {
+  .contain .social {
+    width: 1000px;
+    display: block;
+  }
+  .social h1 {
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .footer .col {
+    width: 33%;
+  }
+  .footer .col h1 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 500px) {
+    .footer .col {
+      width: 50%;
+    }
+    .footer .col h1 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+}
+@media only screen and (max-width: 340px) {
+  .footer .col {
+    width: 100%;
+  }
+}
+
+
+		
+	</style>
+
+
+</head>
+<body>
+	<div id = "page">
+
+		<div id = "header">
+
+		<a class = "left" href="#home"><img src="agarwal.png"></a>
+        
+        <li class = "right"><a href="#home">Home</a></li>
+        <li class = "right"><a href="#news">News</a></li>
+        <li class="dropdown right">
+          <a href="javascript:void(0)" class="dropbtn">Our work</a>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </li>
+        <li class="dropdown right">
+          <a href="javascript:void(0)" class="dropbtn">About Us</a>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </li>
+        <li class="dropdown right">
+          <a href="javascript:void(0)" class="dropbtn">Support Us</a>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </li>
+      </ul>
+
+		</div>
+
+
+		<div id = "main" >
+
+			<div id = "mainstory">
+				<h1>:"Main story, scrollable"</h1>
+			</div>
+
+			<div id = "secondstory">
+				<h1>"Second Story"</h1>
+			</div>
+
+			<div id = "thirdstory">
+				<h1>"Third Story"</h1>
+			</div>		
+
+		</div>
+
+		<div class="footer">
+			  <div class="contain">
+			  <div class="col">
+			    <h1>Company</h1>
+			    <ul>
+			      <li>About</li>
+			      <li>Mission</li>
+			      <li>Services</li>
+			      <li>Social</li>
+			      <li>Get in touch</li>
+			    </ul>
+			  </div>
+			  <div class="col">
+			    <h1>Products</h1>
+			    <ul>
+			      <li>About</li>
+			      <li>Mission</li>
+			      <li>Services</li>
+			      <li>Social</li>
+			      <li>Get in touch</li>
+			    </ul>
+			  </div>
+			  <div class="col">
+			    <h1>Accounts</h1>
+			    <ul>
+			      <li>About</li>
+			      <li>Mission</li>
+			      <li>Services</li>
+			      <li>Social</li>
+			      <li>Get in touch</li>
+			    </ul>
+			  </div>
+			  <div class="col">
+			    <h1>Resources</h1>
+			    <ul>
+			      <li>Webmail</li>
+			      <li>Redeem code</li>
+			      <li>WHOIS lookup</li>
+			      <li>Site map</li>
+			      <li>Web templates</li>
+			      <li>Email templates</li>
+			    </ul>
+			  </div>
+			  <div class="col">
+			    <h1>Support</h1>
+			    <ul>
+			      <li>Contact us</li>
+			      <li>Web chat</li>
+			      <li>Open ticket</li>
+			    </ul>
+			  </div>
+			  <div class="col social">
+			    <h1>Social</h1>
+			    <ul>
+			      <li><img src="https://svgshare.com/i/5fq.svg" width="32" style="width: 32px;"></li>
+			      <li><img src="https://svgshare.com/i/5eA.svg" width="32" style="width: 32px;"></li>
+			      <li><img src="https://svgshare.com/i/5f_.svg" width="32" style="width: 32px;"></li>
+			    </ul>
+			  </div>
+			<div class="clearfix"></div>
+			</div>
+			</div>
+		</div>
+
+	</div>
+
+</body>
+</html>
