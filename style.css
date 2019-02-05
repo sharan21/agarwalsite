@@ -20,21 +20,58 @@ html, body{
 }
 
 
-
-
 /* MAIN */
+#main div{
+	
+	width: 100%;
+	margin-top: 0;
+	padding: 0;
+	display: inline-block;
 
 
+}
+#main div h1{
 
+	text-align: center;
+	font-family: sans-serif;
+	color: black;
+	font-size: 50emu;
 
+}
+#mainstory{
 
+	margin: 0;
+	background-image: url("story1.jpg");
+	opacity: 0.5;
+	height:300px;
+	width:100%;
+
+}
+#secondstory{
+	margin-top:0;
+	opacity: 0.5;
+
+	background-image: url("story2.jpeg");
+
+	height:300px;
+	width:100%;
+
+}
+#thirdstory{
+	margin-top:0;
+	opacity: 0.5;
+
+	background-image: url("story3.jpeg");
+	height:300px;
+	width:100%;
+
+}
 
 
 /* HEADER */
 #header{
 
   position: relative;
-
   margin: 0 0 0 0;
   padding: 0px;
   width: 100%;
@@ -52,7 +89,8 @@ html, body{
 }
 
 #header ul a{
-  color: green;
+  color: white;
+  font-style: sans-serif;
 }
 
 #header img{
