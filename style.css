@@ -4,6 +4,12 @@
   src: url("fonts/manrope/manrope-bold.otf");
 }
 
+
+
+
+
+
+
 /* GENERAL */
 *{
 	margin: 0 0 0 0;
@@ -30,90 +36,51 @@ html, body{
 
 
 
-/* MAIN */
-#main div{
-	
-	width: 100%;
-	margin-top: 0;
-	padding: 0;
-	display: inline-block;
-
-}
-#main div h1{
-
-	text-align: center;
-	padding-top: 120px;
-	font-family: Arial;
-	color: white;
-
-
-}
-#mainstory{
-
-	margin: 0;
-
-	//background-image: url("resources/stc1.png");
-	//background-size: cover;
-  background-color: gray;
-
-	height:400px;
-	width:100%;
-
-}
-#main #secondaryheader{
-  background-color: blue;
-  margin-left: 10%;
-
-
-  height:120px;
-  width: 75%;
-}
-#secondstory{
-	margin-top:0;
 
 
 
-	//background-image: url("resources/stc2.png");
-	//background-size: cover;
 
-  background-color: green;
-
-	height:450px;
-	width:100%;
-
-}
-#thirdstory{
-	margin-top:0;
-
-
-	//background-image: url("resources/stc3.png");
-	//background-size: cover;
-  background-color: orange;
-	height:400px;
-	width:100%;
-
-}
 
 
 /* HEADER */
 
+#header .donate{
+  height: 40px;
+  margin-right: 15px;
+  margin-top: 15px;
+  float: right;
+  padding: 0;
+  border : 1px solid transparent;
+  border-radius: 6px;
+  background-color: pink;
+
+}
+.donate a {
+  color: white;
+}
+#header .donate:hover{
+  background-color: red;
+}
+
+
+
 #header a{
-	font-family: ManropeBold;
-	
+  font-family: ManropeBold;
 
 }
 #header{
-	position: fixed;
-	margin: 0 0 0 0;
-	padding: 0px;
-	width: 100%;
-	height: 60px;
-	background-color: white;
+  position: relative;
+
+  margin: 0 0 0 0;
+  padding: 0px;
+  width: 100%;
+  height: 60px;
+  background-color: white;
 }
 #header .image {
-	width: 50px;
-	height: 30px;
-	background-image: url("agarwal.png");
+  width: 50px;
+  height: 30px;
+  background-image: url("agarwal.png");
 }
 }
 
@@ -124,9 +91,8 @@ html, body{
 
 
 #header ul li a{
-	font-family: Arial;
-
- 
+  font-family: Arial;
+  position: relative;
 }
 
 #header img{
@@ -159,9 +125,10 @@ li a, .dropbtn {
   text-decoration: none;
 }
 
-#header li a:hover, .dropdown:hover .dropbtn {
+#header .right li a:hover, .dropdown:hover .dropbtn {
   background-color: orange;
-  color: black;
+  border-radius: 10px;
+  color: white;
 }
 
 #header li.dropdown {
@@ -187,14 +154,142 @@ li a, .dropbtn {
 }
 
 .dropdown-content a:hover {
-	background-color: #f1f1f1
-	color: black;
+  background-color: #f1f1f1
+  color: black;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
   color: black;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN */
+#main{
+  position: relative;
+
+}
+#main div{
+	
+	width: 100%;
+	margin-top: 0;
+	padding: 0;
+	display: inline-block;
+
+}
+#main div h1{
+
+	text-align: center;
+	padding-top: 120px;
+	font-family: Arial;
+	color: white;
+
+
+}
+
+#main #secondaryheader{
+
+  background-color: orange;
+  opacity: 0.7;
+  margin-left: 10%;
+  margin-top: 0px;
+
+  height:80px;
+  width: 75%;
+}
+
+
+
+#main #secondaryheader .right a:hover{
+  //background-color: white;
+  border-bottom : 3px solid white;
+
+
+
+}
+#secondaryheader a{
+  color: white;
+}
+#main #secondaryheader .right{
+
+  float: right;
+  padding-top: 0;
+
+  margin-top: 17px;
+  height: 150px;
+  width: 100px;
+  font-family: ManropeBold;
+}
+
+#mainstory{
+  position: relative;
+
+	margin: 0;
+
+	background-image: url("resources/stc1.png");
+	background-size: cover;
+  //background-color: gray;
+
+	height:500px;
+	width:100%;
+
+}
+
+#secondstory{
+	margin-top:0;
+
+
+
+	//background-image: url("resources/stc2.png");
+	//background-size: cover;
+
+  background-color: green;
+
+	height:450px;
+	width:100%;
+
+}
+#thirdstory{
+	margin-top:0;
+
+
+	//background-image: url("resources/stc3.png");
+	//background-size: cover;
+  background-color: orange;
+	height:400px;
+	width:100%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* FOOTER */
 
