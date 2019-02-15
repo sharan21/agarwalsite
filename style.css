@@ -2,7 +2,22 @@
 @font-face {
   font-family: ManropeBold;
   src: url("fonts/manrope/manrope-bold.otf");
+  
 }
+
+@font-face {
+  font-family: DancingScript;
+  src: url("fonts/dancing-script/dancing.otf");
+}
+
+@font-face {
+  font-family: AvrileSans;
+  src: url("fonts/avrile-sans/AvrileSans-BoldItalic.ttf");
+}
+
+
+
+
 
 
 
@@ -39,6 +54,34 @@ html, body{
 
 
 
+/* TOP HEADER */
+
+
+#top-header{
+	position: relative;
+	background-color: #F5F5F5;
+
+	height: 50px;
+	width: 100%;
+
+}
+#top-header .right{
+	float: right;
+	font-family: AvrileSans;
+	font-size: 15px;
+}
+#top-header .right a{
+	margin-right: 15px;
+}
+
+
+
+
+
+
+
+
+
 
 
 /* HEADER */
@@ -46,41 +89,48 @@ html, body{
 #header .donate{
   height: 40px;
   margin-right: 15px;
-  margin-top: 15px;
+  margin-top: 27px;
   float: right;
-  padding: 0;
-  border : 1px solid transparent;
-  border-radius: 6px;
   background-color: pink;
+  margin-right: 22px;
 
+  border-radius: 6px;
+  
 }
 .donate a {
+
+
   color: white;
+  text-align: center;
+  padding-top: 9px;
+
 }
 #header .donate:hover{
-  background-color: red;
+	background-color: red;
+	transition: 0.3s;
+
 }
-
-
 
 #header a{
   font-family: ManropeBold;
+  font-size: 18px;
 
 }
 #header{
   position: relative;
+  border-bottom: 3px solid blue;
 
   margin: 0 0 0 0;
   padding: 0px;
   width: 100%;
-  height: 60px;
+  height: 100px;
   background-color: white;
 }
 #header .image {
-  width: 50px;
+
+  width: 90px;
   height: 30px;
-  background-image: url("agarwal.png");
-}
+
 }
 
 #header ul {
@@ -90,14 +140,17 @@ html, body{
 
 
 #header ul li a{
+
   font-family: Arial;
-  position: relative;
 }
 
 #header img{
+	position: absolute;
+	margin-left: 100px;
+	display: block;
+	margin-top: 20px;
 
-  position: absolute;
-  width: 160px;
+  width: 220px;
   height: 50px;
   
   padding: 0px;
@@ -112,7 +165,7 @@ html, body{
 #header .right {
   float: right;
   margin-right: 35px;
-  margin-top: 5px;
+  margin-top: 20px;
 
 }
 
@@ -124,13 +177,14 @@ li a, .dropbtn {
   text-decoration: none;
 }
 
-#header .right li a:hover, .dropdown:hover .dropbtn {
-  background-color: orange;
+#header .right li a:hover, #header .right a:hover, #header .dropdown-content a:hover, .dropdown:hover .dropbtn {
+  //background-color: orange;
   border-radius: 10px;
-  color: white;
+  color: #76B656;
+  transition: 0.3s;
 }
 
-#header li.dropdown {
+#header li .dropdown {
   display: inline-block;
   color: black;
 }
@@ -160,6 +214,7 @@ li a, .dropbtn {
 .dropdown:hover .dropdown-content {
   display: block;
   color: black;
+
 }
 
 
@@ -197,19 +252,22 @@ li a, .dropbtn {
 	padding-top: 120px;
 	font-family: Arial;
 	color: white;
-
-
 }
 
 #main #secondaryheader{
+position: absolute;
 
-  background-color: orange;
-  opacity: 0.7;
+  background-color: #76B656;
+  opacity: 0.95;
   margin-left: 10%;
   margin-top: 0px;
-
   height:80px;
   width: 75%;
+}
+#main #slideImage {
+	width: 100%;
+	height: 70%;
+
 }
 
 
@@ -217,7 +275,6 @@ li a, .dropbtn {
 #main #secondaryheader .right a:hover{
   //background-color: white;
   border-bottom : 3px solid white;
-
 
 
 }
@@ -239,9 +296,8 @@ li a, .dropbtn {
   position: relative;
 
 	margin: 0;
-
-	background-image: url("resources/stc1.png");
-	background-size: cover;
+	//background-image: url("resources/stc1.png");
+	//background-size: cover;
   //background-color: gray;
 
 	height:500px;
@@ -251,8 +307,6 @@ li a, .dropbtn {
 
 #secondstory{
 	margin-top:0;
-
-
 
 	//background-image: url("resources/stc2.png");
 	//background-size: cover;
@@ -295,8 +349,8 @@ li a, .dropbtn {
 .footer {
   width: 100%;
   position: relative;
-  height: auto;
-  background-color: #EEE;
+  height: 320px;
+  background-color: #87C487;
 }
 .footer .col {
   width: 190px;
@@ -310,11 +364,11 @@ li a, .dropbtn {
 .footer .col h1 {
   margin: 0;
   padding: 0;
-  font-family: inherit;
+  font-family: ManropeBold;
   font-size: 12px;
   line-height: 17px;
   padding: 20px 0px 5px 0px;
-  color: rgba(255,255,255,0.2);
+  color: white;
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 0.250em;
@@ -325,9 +379,10 @@ li a, .dropbtn {
   padding: 0;
 }
 .footer .col ul li {
-  color: #999999;
+  color: white;
   font-size: 14px;
-  font-family: Verdana;
+  font-family: DancingScript;
+  font-size: 20px;
   font-weight: bold;
   padding: 5px 0px 5px 0px;
   cursor: pointer;
@@ -341,7 +396,7 @@ li a, .dropbtn {
 }
 
 .footer .col ul li:hover {
-  color: #ffffff;
+  color: #dddddd;
   transition: .1s;
   -webkit-transition: .1s;
   -moz-transition: .1s;
@@ -391,4 +446,19 @@ li a, .dropbtn {
     width: 100%;
   }
 }
+
+
+
+
+
+
+
+
+/* BOTTOM FOOTER */
+ #bottom-footer{
+
+
+
+
+ }
 

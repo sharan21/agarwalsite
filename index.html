@@ -10,9 +10,18 @@
 <body>
 	<div id = "page">
 
+		<div id = "top-header">
+			<li class = "right"><a href="">Link 1</a></li>
+			<li class = "right"><a href="">Link 1</a></li>
+			<li class = "right"><a href="">Link 1</a></li>
+
+			
+
+		</div>
+
 		<div id = "header">
 
-		<a class = "left" href="#home"><img src="resources/agarwal.png"></a>
+		<a class = "left" href="#home"><img src="resources/agarwals.png"></a>
         
         <li class = "donate"><a href="#home">Donate</a></li>
         <li class="dropdown right">
@@ -34,9 +43,9 @@
         <li class="dropdown right">
           <a href="javascript:void(0)" class="dropbtn">Support Us</a>
           <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <a href="#" >Link 1</a>
+            <a href="#" >Link 2</a>
+            <a href="#" >Link 3</a>
           </div>
         </li>
         <li class = "right"><a href="#news">News</a></li>
@@ -50,11 +59,15 @@
 					<ul>
 
 
-						<li class = "right"><a href="">Link1</a></li>
-						<li class = "right"><a href="">Link2</a></li>
-						<li class = "right"><a href="">Link3</a></li>
+						<li class = "right"><a href="javascript:;" onclick="updateImage(1)">Link1</a></li>
+						<li class = "right"><a href="javascript:;" onclick="updateImage(2)">Link2</a></li>
+						<li class = "right"><a href="javascript:;" onclick="updateImage(3)">Link3</a></li>
 					</ul>
 				
+				</div>
+				<div >
+					<img id = "slideImage" src="resources/stc1.png">
+
 				</div>
 			</div>
 
@@ -130,6 +143,11 @@
 			<div class="clearfix"></div>
 			</div>
 			</div>
+		</div>
+
+		<div id = "bottom-footer">
+			
+
 		</div>
 
 	</div>

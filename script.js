@@ -56,3 +56,16 @@ $("#cssmenu").menumaker({
 });
 });
 })(jQuery);
+
+function updateImage(slideSelect) {
+ 
+  if(slideSelect == 1)
+    document.getElementById("slideImage").src="resources/stc1.png";
+  else if(slideSelect == 2)
+    document.getElementById("slideImage").src="resources/stc2.png";
+  else
+    document.getElementById("slideImage").src="resources/stc3.png";
+
+  
+
+}
